@@ -1,2 +1,20 @@
-name: Grah Ayurveda
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Grah Ayurveda - Skin Care Specialists
+email: grahayurveda@gmail.com
+description: Using gentle, natural ingredients to create face and skin care products
+allthekeywords: ubtan, massage, face pack, face scrub ayurveda
+baseurl: "" # the subpath of your site, e.g. /blog
+url: http://www.grahayurveda.com/
+facebook_username: GrahAyurveda 
+
+# Build settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
 markdown: kramdown
