@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{% if page.metaDesc %}{{ page.metaDesc }}{% else %} {{ site.description }}{% endif %}">
+  <meta name="keywords" content="{% if page.allthekeywords %}{{ page.allthekeywords }}{% else %} {{ site.allthekeywords }}{% endif %}">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon.ico" >
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+   <script>
+      /* When the user clicks on the button, toggle between hiding and 
+      showing the dropdown content */
+      function dropIt(id) {
+         document.getElementById(id).classList.toggle("show");
+      }  
+   </script>
+</head>

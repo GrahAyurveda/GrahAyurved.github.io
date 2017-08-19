@@ -1,0 +1,43 @@
+<aside>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="/"><img border="0" alt="Home" src="/assets/home.png" width="20" height="20"></a></li>
+        {% for page in site.pages %} 
+        {% if page.title %}
+        {% if page.tooltip %}
+           <li>
+              <div class="tooltip">
+              <a href="{{ page.url | prepend: site.baseurl }}" >{{ page.title }}</a>
+              <span class="tooltiptext">{{page.tooltip}}</span>
+              </div>
+           </li>
+        {% else %}
+           {% if page.dropdowns %}
+              <li>
+              <div class="dropdown">
+                 <a onclick="dropIt({{dropId}})" class="dropbtn">
+                    {{ page.title }}
+                 </a>
+                 <div id="myDropdown" class="dropdown-content">
+                    {% for dropId in page.dropdowns %} 
+                       <a href="/{{dropId}}/">{{ dropId }}</a>
+                    {% endfor %}
+                 </div>
+              </div>
+              </li>
+           {% else %}
+              <li><a href="{{ page.url | prepend: site.baseurl }}" >{{ page.title }}</a>
+              </li>
+           {% endif %}
+        {% endif %} 
+        {% endif %} 
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</aside>
+<br>
+<header class="site-banner">
+  <h4>{{ site.title }}</h4>
+</header>

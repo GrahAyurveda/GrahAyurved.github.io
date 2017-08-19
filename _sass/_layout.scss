@@ -1,0 +1,282 @@
+body {
+   margin: 0;
+   color: $color3;
+   font-family: $font-style;
+   font-size: 1.1em;
+   line-height: 1.6;
+   background-color: $color4;
+   -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+   font-weight: 600;
+   color: $heading-font-color;
+   font-family: $heading-font;
+   line-height: 1.5;
+}
+h1 {
+   color: $color2;
+   font-size: 1.7em;
+   a,
+   a:visited {
+      text-decoration: none;
+      color: $main;
+   }
+}
+h2 {
+   font-size: 2em;
+}
+a,
+a:visited {
+   color: $color2; //$link-color;
+   text-decoration: underline;
+   font-weight: bold;
+}
+a:hover {
+   color: $link-hover-color;
+}
+header {
+   background: $color1;
+   padding: 8px 15px;
+   text-align: center;
+   margin: 50px 0 0;
+   height: 12vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main {
+   padding: 0 15px;
+   max-width: $content-width;
+   margin: 0 auto;
+}
+time {
+   color: #898989;
+}
+.container {
+   max-width: $content-width;
+   margin: 0 auto;
+}
+.site-banner {
+   border-top: 0.6rem solid $color2;
+   border-bottom: 0.6rem solid $color2;
+   width: 100%;
+}
+
+/* Aside */
+aside {
+   position: fixed;
+   top: 0;
+   left: 0;
+   background: #fff;
+   width: 100%;
+   z-index: 2;
+   border-bottom: 1px solid lighten($light, 30%);
+   box-shadow: 0px 1px 1px RGBA(4, 25, 54, .1);
+   nav {
+      float: left;
+      max-width: 1200px;
+      margin: 0 auto;
+      ul {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+         li {
+            float: left;
+            position: relative;
+            padding: 0;
+            margin: 0 0;
+            a {
+               text-decoration: none;
+               display: block;
+               font-size: 14px;
+               padding: 15px;
+               margin-bottom: 1px;
+               box-shadow: 0;
+               &:hover,
+               &:focus,
+               &:active {
+                  background: $header;
+                  outline: none;
+                  text-decoration: none;
+                  color: $main;
+               }
+            }
+         }
+      }
+      &:after {
+         content: '';
+         display: table;
+         clear: both;
+      }
+   }
+}
+
+.cover-banner2 {
+   width: 90%;
+   height: 200vh;
+   max-height: 2000px;
+   margin: 25px auto;
+   padding: 12px;
+}
+
+.cover-banner {
+   width: 100%;
+   height: 120vh;
+   max-height: 1067px;
+   margin: 5px auto;
+   padding: 2px;
+
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+   background-size: cover;
+
+   position: relative;
+   display: flex;
+   flex-direction: column;
+
+   justify-content: center;
+   h1, h2, h3, h4 {
+      background: rgba(22,22,22, 0.5);
+      color: $color6;
+      margin: 20px 0 0;
+      vertical-align: middle;
+      text-align: center;
+      width: 100%;
+   }
+
+   h1 {
+      font-size: 3vw;
+   }
+   h2, h3, h4 {
+      font-size: 2vw;
+   }
+}
+
+footer {
+   text-align: center;
+   color: $color2;
+   padding: 40px;
+}
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    font-size: 2vh;
+    background-color: $color2;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    border-radius: 4px;
+ 
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 105%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: 150px;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+.responsive2 {
+    padding: 0 6px;
+    float: left;
+    width: 32.9999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Dropdown Button */
+.dropbtn {
+    color: $color2;
+    background-color: white;
+    display: block;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $color4;
+    min-width: 175px;
+    z-index: 4;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+// Show the dropdown menu 
+.show {display:block;}
