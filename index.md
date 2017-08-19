@@ -43,19 +43,19 @@ We partner with and supply skin care products to DwaarPe
 </div> </div>
 <div class="clearfix"></div>
 <div class="responsive2"> <div class="img">
-  <a href="/Neemrit/">
+  <a href="/">
     <img src="/assets/neemrit.JPG" alt="Neemrit" width="400" height="400"></a>
   <div class="desc">Neemrit - Acne Control Skin Brightening Pack</div>
   <div class="desc">Rs 300/50gms</div>
 </div> </div>
 <div class="responsive2"> <div class="img">
-  <a href="/Nutan/">
+  <a href="/">
     <img src="/assets/neemrit.JPG" alt="Nutan" width="400" height="400"></a>
   <div class="desc">Nutan - Anti-pigmentation Skin Renewal Pack</div>
   <div class="desc">Rs 340/50gms</div>
 </div> </div>
 <div class="responsive2"> <div class="img">
-  <a href="/AshtamAushadhi/">
+  <a href="/">
     <img src="/assets/ashtam2.JPG" alt="Ashtam Aushadhi" width="400" height="400"></a>
   <div class="desc">Ashtam Aushadhi - An Anti-Acne Face Pack</div>
   <div class="desc">Rs 300/50gms</div>
